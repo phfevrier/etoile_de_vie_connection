@@ -1,6 +1,5 @@
 
 
-
 <h1><?= $connection_title ?></h1>
 <p> <?= htmlspecialchars($error_msg) ?> </p>
 
@@ -16,3 +15,4 @@
 </form>
 <br>
 <a href="?action=signin">Créer un compte</a>
+

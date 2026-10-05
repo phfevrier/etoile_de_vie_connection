@@ -1,14 +1,25 @@
+<!DOCTYPE html>
+<html>
 
+    <head>
+        <?php require_once PATH_ROOT.'/views/head.php'; ?>
+         <!-- head commun à toute les pages -->
+    </head>
 
-<a href="<?=URL?>/?action=home">Accueil</a> 
+    <body>
+        <?php require_once PATH_ROOT.'/views/navbar.php'; ?>
+        <!-- navbar commune à toute les pages -->
+    
 
-
-<?php require_once $_SESSION['navbar']; ?>
-
-    <main>
 
         <?php require $content_view; // Inclusion de la vue spécifique ?>
 
-    </main>
 
 
+        <?php require_once PATH_ROOT.'/views/footer.php'; ?>
+        <!-- footer commun à toute les pages -->
+
+      
+
+    </body>
+</html>

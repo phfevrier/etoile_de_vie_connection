@@ -8,7 +8,7 @@ function homeAction() {
 
     redirectionLogin();
     
-    $greet_msg = "Bienvenue " . $_SESSION['nom'] . " !";
+    $greet_msg = "Bienvenue" . $_SESSION['nom'] . " !";
 
 
     $content_view = PATH_ROOT.'/views/homeView.php';

@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+// création de session 
 
 require_once 'config.php';
 require_once PATH_ROOT.'/controllers/home.php';
@@ -25,6 +26,7 @@ function redirectionLogin() {
 $_SESSION['navbar'] = isLogged() ? 'navbarProfile.php' : 'navbarLogin.php';
 
 $action = $_GET['action'] ?? 'home';
+// routeur
 
 
 if ($action === 'home') {
@@ -39,6 +41,11 @@ if ($action === 'home') {
     logoutAction();
 } else if ($action === "profile"){
     profileAction();
+} else if ($action === "conversations"){
+    conversationsAction();
+} else if ($action === "messagerie"){
+    messagerieAction();
 }
+ 
  
 

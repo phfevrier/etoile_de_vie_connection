@@ -1,0 +1,236 @@
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(104, 48, 224);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+
+}
+
+.bienvenu {
+    text-align: center;
+    font-size: medium;
+    color: #2563eb;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+}
+
+.cartes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bloc {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.6); /* fond transparent */
+    backdrop-filter: blur(15px); /* flou */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(32, 86, 204, 0.08);
+    transition: 0.4s ease;
+}
+
+.bloc:hover {
+     transform: translateY(-10px);
+}
+
+.bloc h2 {
+    color: rgb(104, 48, 224);
+    text-align: center;
+    padding: 25px;
+    font-size: 1.4rem;
+}
+
+.card {
+    margin: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h3 {
+    color: #2563eb; 
+    margin-bottom: 10px; 
+}
+
+.card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    color: rgb(133, 162, 236);
+}
+
+.nouveauMessage {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    backdrop-filter: blur(18px); /* flou */
+    border-radius: 30px; /* arrondi */
+    box-shadow: 0 12px 30px rgba(30, 64, 175, 0.08);
+    color: rgb(133, 162, 236);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.nouveauMessage::before {
+    /* effet décoratif */
+    content: "";
+    position: absolute; 
+    inset: 0; 
+    background: radial-gradient(circle at top left,rgba(37, 99, 235, 0.08), transparent 60%); 
+    pointer-events: none; 
+}
+
+.nouveauMessage:hover {
+    transform: translateY(-8px); /* monte */
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12); /* ombre plus forte */
+    border-color: rgba(37, 99, 235, 0.2); /* bordure plus visible */
+}
+
+.bouton {
+    /* bouton */
+    display: block; /* bloc */
+    width: fit-content; /* largeur adaptée */
+    margin: 25px auto; /* centré */
+    text-decoration: none; 
+    background: linear-gradient(135deg,#6830e0, #2563eb, #06b6d4); /* dégradé */
+    color: white; /* texte blanc */
+    font-weight: 600; /* gras */
+    padding: 14px 25px; /* espace interne */
+    border-radius: 50px; /* bouton rond */
+    transition: 0.3s ease; /* animation */
+}
+
+.bouton:hover {
+    /* survol bouton */
+    transform: scale(1.05); /* agrandit */
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25); /* ombre */
+}
+
+aside {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* fond clair */
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(15, 42, 100, 0.08);
+}
+
+aside img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255); /* bordure blanche */
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.nom {
+    /* nom utilisateur */
+    margin: 30px 0; /* espace */
+    font-size: 24px; /* taille */
+    font-weight: 700; /* gras */
+    color: #2563eb; /* bleu */
+}
+
+.nom span {
+    /* icône ou texte */
+    display: block; /* bloc */
+    margin-top: 15px; /* espace haut */
+    cursor: pointer; /* main au survol */
+    font-size: 24px; /* taille */
+}
+
+aside button {
+    /* bouton profil */
+    width: 100%; /* pleine largeur */
+    height: 90px; /* hauteur */
+
+    border: none; /* pas de bordure */
+    border-radius: 20px; /* arrondi */
+
+    background: linear-gradient(135deg, #6830e0,#2563eb, #06b6d4); /* dégradé */
+
+    color: white; /* texte blanc */
+
+    font-size: 18px; /* taille texte */
+    font-weight: 600; /* gras */
+
+    cursor: pointer; /* main */
+    transition: 0.3s ease; /* animation */
+}
+
+aside button:hover {
+    /* survol bouton */
+    transform: translateY(-5px); /* monte */
+}
+
+@keyframes apparition {
+    /* animation d’entrée */
+    from {
+        opacity: 0; /* invisible */
+        transform: translateY(25px); /* en bas */
+    }
+    to {
+        opacity: 1; /* visible */
+        transform: translateY(0); /* position normale */
+    }
+}
+
+
+.bloc,aside,h1 {
+    /* éléments animés */
+    animation: apparition 0.8s ease; /* animation */
+}
+
+
+@media (min-width: 768px) {
+    /* à partir de 768px */
+    .dashboard {
+        padding: 50px; /* plus d’espace */
+    }
+
+    h1 {
+        font-size: 3rem; /* titre plus grand */
+    }
+
+    aside {
+        width: 320px; /* largeur fixe */
+    }
+}
+
+
+@media (min-width: 900px) {
+    /* à partir de 900px */
+    .cartes {
+        flex-direction: row; /* cartes en ligne */
+    }
+}
+
+
+@media (min-width: 1200px) {
+    /* grand écran */
+    
+}
+
+

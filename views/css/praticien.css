@@ -1,0 +1,286 @@
+
+
+h1 {
+    /* titre principal */
+    text-align: center; /* centre le texte */
+    font-size: 2rem; /* taille du texte */
+    font-weight: 700; /* texte gras */
+
+    color: rgb(104, 48, 224); /* violet */
+
+    background: rgba(255, 255, 255, 0.6); /* fond blanc transparent */
+    backdrop-filter: blur(20px); /* effet flou derrière */
+
+    border-radius: 30px; /* coins arrondis */
+    padding: 30px; /* espace interne */
+
+    margin-bottom: 50px; /* espace en bas */
+
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15); /* ombre douce */
+}
+
+.cartes {
+    /* conteneur des cartes */
+    display: flex; /* flexbox */
+    flex-direction: column; /* empile les cartes */
+    gap: 30px; /* espace entre cartes */
+}
+
+.bloc {
+    /* carte principale */
+    flex: 1; /* prend espace disponible */
+
+    background: rgba(255, 255, 255, 0.6); /* fond transparent */
+    backdrop-filter: blur(15px); /* flou */
+
+    border-radius: 30px; /* coins arrondis */
+
+    overflow: hidden; /* cache débordement */
+
+    box-shadow: 0 15px 35px rgba(32, 86, 204, 0.08); /* ombre */
+
+    transition: 0.4s ease; /* animation douce */
+}
+
+.bloc:hover {
+    /* quand on survole */
+    transform: translateY(-10px); /* monte légèrement */
+}
+
+.bloc h2 {
+    /* titre des blocs */
+    text-align: center; /* centré */
+    padding: 25px; /* espace interne */
+    color: rgb(104, 48, 224); /* violet */
+    font-size: 1.4rem; /* taille */
+}
+
+.card {
+    /* petite carte */
+    margin: 15px; /* espace extérieur */
+    padding: 20px; /* espace interne */
+
+    background: white; /* fond blanc */
+
+    border-radius: 20px; /* coins arrondis */
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* petite ombre */
+
+    transition: 0.3s ease; /* animation */
+}
+
+.card:hover {
+    /* au survol */
+    transform: scale(1.03); /* agrandit légèrement */
+}
+
+.card h3 {
+    /* titre de la carte */
+    color: #2563eb; /* bleu */
+    margin-bottom: 10px; /* espace dessous */
+}
+
+.card p {
+    /* texte dans la carte */
+    display: flex; /* aligne en ligne */
+    align-items: center; /* centre verticalement */
+    gap: 10px; /* espace entre éléments */
+
+    margin: 8px 0; /* espace vertical */
+
+    color: #475569; /* gris */
+}
+
+.nouveauMessage {
+    /* bloc message */
+    background: rgba(255, 255, 255, 0.55); /* fond transparent */
+    border: 1px solid rgba(37, 99, 235, 0.12); /* bordure légère */
+
+    backdrop-filter: blur(18px); /* flou */
+
+    border-radius: 30px; /* arrondi */
+
+    box-shadow: 0 12px 30px rgba(30, 64, 175, 0.08); /* ombre */
+
+    color: #1e293b; /* texte */
+
+    position: relative; /* permet pseudo-éléments */
+
+    overflow: hidden; /* cache débordement */
+
+    transition: 0.3s ease; /* animation */
+}
+
+.nouveauMessage::before {
+    /* effet décoratif */
+    content: ""; /* élément vide */
+    position: absolute; /* position libre */
+    inset: 0; /* couvre tout */
+
+    background: radial-gradient(
+        circle at top left,
+        rgba(37, 99, 235, 0.08),
+        transparent 60%
+    ); /* lumière douce */
+
+    pointer-events: none; /* pas cliquable */
+}
+
+.nouveauMessage:hover {
+    /* survol */
+    transform: translateY(-8px); /* monte */
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12); /* ombre plus forte */
+    border-color: rgba(37, 99, 235, 0.2); /* bordure plus visible */
+}
+
+.bouton {
+    /* bouton */
+    display: block; /* bloc */
+    width: fit-content; /* largeur adaptée */
+    margin: 25px auto; /* centré */
+
+    text-decoration: none; /* enlève soulignement */
+
+    background: linear-gradient(135deg,#6830e0, #2563eb, #06b6d4); /* dégradé */
+    color: white; /* texte blanc */
+
+    font-weight: 600; /* gras */
+
+    padding: 14px 25px; /* espace interne */
+    border-radius: 50px; /* bouton rond */
+
+    transition: 0.3s ease; /* animation */
+}
+
+.bouton:hover {
+    /* survol bouton */
+    transform: scale(1.05); /* agrandit */
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25); /* ombre */
+}
+
+/* ASIDE (mobile) */ /* barre latérale */
+
+aside {
+    /* panneau profil */
+    width: 100%; /* prend toute la largeur */
+
+    background: rgba(255, 255, 255, 0.6); /* fond clair */
+    backdrop-filter: blur(20px); /* flou */
+
+    border-radius: 30px; /* arrondi */
+
+    padding: 30px; /* espace interne */
+
+    text-align: center; /* centre texte */
+
+    box-shadow: 0 15px 35px rgba(15, 42, 100, 0.08); /* ombre */
+}
+
+aside img {
+    /* image profil */
+    width: 180px; /* largeur */
+    height: 180px; /* hauteur */
+
+    object-fit: cover; /* ajuste image */
+
+    border-radius: 50%; /* cercle */
+
+    border: 5px solid white; /* bordure blanche */
+
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25); /* ombre */
+}
+
+.nom {
+    /* nom utilisateur */
+    margin: 30px 0; /* espace */
+    font-size: 24px; /* taille */
+    font-weight: 700; /* gras */
+    color: #2563eb; /* bleu */
+}
+
+.nom span {
+    /* icône ou texte */
+    display: block; /* bloc */
+    margin-top: 15px; /* espace haut */
+    cursor: pointer; /* main au survol */
+    font-size: 24px; /* taille */
+}
+
+aside button {
+    /* bouton profil */
+    width: 100%; /* pleine largeur */
+    height: 90px; /* hauteur */
+
+    border: none; /* pas de bordure */
+    border-radius: 20px; /* arrondi */
+
+    background: linear-gradient(135deg, #6830e0,#2563eb, #06b6d4); /* dégradé */
+
+    color: white; /* texte blanc */
+
+    font-size: 18px; /* taille texte */
+    font-weight: 600; /* gras */
+
+    cursor: pointer; /* main */
+    transition: 0.3s ease; /* animation */
+}
+
+aside button:hover {
+    /* survol bouton */
+    transform: translateY(-5px); /* monte */
+}
+
+/* ANIMATION */ /* effets d’apparition */
+
+@keyframes apparition {
+    /* animation d’entrée */
+    from {
+        opacity: 0; /* invisible */
+        transform: translateY(25px); /* en bas */
+    }
+    to {
+        opacity: 1; /* visible */
+        transform: translateY(0); /* position normale */
+    }
+}
+
+.bloc,
+aside,
+h1 {
+    /* éléments animés */
+    animation: apparition 0.8s ease; /* animation */
+}
+
+/* TABLET */ /* écran tablette */
+
+@media (min-width: 768px) {
+    /* à partir de 768px */
+    .dashboard {
+        padding: 50px; /* plus d’espace */
+    }
+
+    h1 {
+        font-size: 3rem; /* titre plus grand */
+    }
+
+    aside {
+        width: 320px; /* largeur fixe */
+    }
+}
+
+/* TABLET LARGE */ /* tablette large */
+
+@media (min-width: 900px) {
+    /* à partir de 900px */
+   .cartes {
+        flex-direction: row; /* cartes en ligne */
+    }
+}
+
+/* DESKTOP */ /* ordinateur */
+/* le conteneur aside vers le haut droit */
+
+@media (min-width: 1200px) {
+    /* grand écran */
+    
+}
