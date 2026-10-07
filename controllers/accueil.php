@@ -11,7 +11,7 @@ function homeAction() {
     $greet_msg = "Bienvenue" . $_SESSION['nom'] . " !";
 
 
-    $content_view = PATH_ROOT.'/views/homeView.php';
+    $content_view = PATH_ROOT.'/views/accueilView.php';
     require_once PATH_ROOT.'/views/layout.php';
 
 }

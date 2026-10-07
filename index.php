@@ -4,7 +4,7 @@ session_start();
 // création de session 
 
 require_once 'config.php';
-require_once PATH_ROOT.'/controllers/home.php';
+require_once PATH_ROOT.'/controllers/accueil.php';
 require_once PATH_ROOT.'/controllers/login.php';
 require_once PATH_ROOT.'/controllers/signin.php';
 require_once PATH_ROOT.'/controllers/logout.php';

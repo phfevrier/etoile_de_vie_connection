@@ -30,3 +30,13 @@
 
 <!-- Lien dynamique en fonction de la page -->
 <link rel="stylesheet" href="views/css/accueil.css" />
+
+
+<link rel="stylesheet" href="views/css/commun.css">
+<link rel="stylesheet" href="views/css/accueil.css">
+<link rel="stylesheet" href="views/css/connexion.css">
+<link rel="stylesheet" href="views/css/soins.css">
+<link rel="stylesheet" href="views/css/rendezvous.css">
+
+
+</head>

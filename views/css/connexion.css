@@ -1,0 +1,32 @@
+/* Formulaire mobile, puis centre sur les grands ecrans. */
+.page-connexion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carte-connexion {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5em;
+  border-radius: 1em;
+  background: #defaff;
+}
+.carte-connexion h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 0 1.5em;
+}
+.lien-compte {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 1.5em;
+  color: #53707d;
+}
+@media (min-width: 640px) {
+  .carte-connexion {
+    flex: none;
+    width: 440px;
+    padding: 3em;
+  }
+}

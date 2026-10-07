@@ -1,0 +1,21 @@
+/* Details et catalogue des soins. */
+.detail-soin {
+  text-align: center;
+}
+.image-soin {
+  width: 180px;
+  height: 150px;
+  object-fit: contain;
+  margin: 1em auto;
+  display: block;
+}
+.texte-soin {
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+@media (min-width: 640px) {
+  .image-soin {
+    width: 240px;
+    height: 200px;
+  }
+}

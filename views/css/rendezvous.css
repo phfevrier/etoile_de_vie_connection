@@ -1,0 +1,29 @@
+/* Choix du jour et du rendez-vous. */
+.jours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  margin-bottom: 1.5em;
+}
+.jour {
+  padding: 1em;
+  border: 1px solid #d0e6ff;
+  border-radius: 0.5em;
+  color: #1452d9;
+  background: #f8feff;
+}
+.jour.actif {
+  border: 2px solid #7b2af8;
+  background: #efe9ff;
+}
+.resume {
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  background: #f5ffff;
+}
+@media (min-width: 640px) {
+  .formulaire-rendezvous {
+    width: 28em;
+  }
+}
