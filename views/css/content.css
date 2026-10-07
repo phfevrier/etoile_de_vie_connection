@@ -20,32 +20,41 @@ body {
     color: #1e293b; /* couleur du texte (gris foncé) */
 }
 
-/* MOBILE FIRST (base = mobile) */ /* on commence par le style téléphone */
 
-.dashboard {
-    /* conteneur principal */
-    display: flex; /* active flexbox */
-    flex-direction: column; /* éléments en colonne (mobile) */
-    gap: 40px; /* espace entre les éléments */
-    padding: 20px; /* espace intérieur */
-   /* align-items: flex-start;  aligne à gauche */
+
+
+
+
+/* TABLET */ /* écran tablette */
+
+@media (min-width: 768px) {
+    /* à partir de 768px */
+    .dashboard {
+        padding: 50px; /* plus d’espace */
+    }
+
+    h1 {
+        font-size: 3rem; /* titre plus grand */
+    }
+
+    aside {
+        width: 320px; /* largeur fixe */
+    }
 }
 
-.contenu {
-    /* zone de contenu */
-    flex: 1; /* prend tout l’espace disponible */
-}
-
+/* TABLET LARGE */ /* tablette large */
 
 @media (min-width: 900px) {
     /* à partir de 900px */
-    
+   .cartes {
+        flex-direction: row; /* cartes en ligne */
+    }
 }
 
+/* DESKTOP */ /* ordinateur */
+/* le conteneur aside vers le haut droit */
+
 @media (min-width: 1200px) {
-    /* à partir de 1200px */
-    .dashboard {
-        flex-direction: row; /* layout horizontal */
-        align-items: flex-start;
-    }
+    /* grand écran */
+    
 }

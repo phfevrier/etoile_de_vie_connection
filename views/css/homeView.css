@@ -1,0 +1,18 @@
+h1 {
+    /* titre principal */
+    text-align: center; /* centre le texte */
+    font-size: 2rem; /* taille du texte */
+    font-weight: 700; /* texte gras */
+
+    color: rgb(104, 48, 224); /* violet */
+
+    background: rgba(255, 255, 255, 0.6); /* fond blanc transparent */
+    backdrop-filter: blur(20px); /* effet flou derrière */
+
+    border-radius: 30px; /* coins arrondis */
+    padding: 30px; /* espace interne */
+
+    margin-bottom: 50px; /* espace en bas */
+
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15); /* ombre douce */
+}

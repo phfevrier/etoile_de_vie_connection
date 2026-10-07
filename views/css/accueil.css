@@ -1,37 +1,154 @@
-/* RESET (base du site) */ /* on remet tout à zéro pour éviter les différences entre navigateurs */
+ 
+ 
+ 
+ 
+ main{
+    display: flex;
+    justify-content: center;
+ }
+ 
+ 
+ 
+ h1 {
+  /* titre principal */
+  text-align: center; /* centre le texte */
+  font-size: 2rem; /* taille du texte */
+  font-weight: 700; /* texte gras */
 
-* {
-    /* sélectionne tous les éléments */
-    margin: 0; /* enlève les marges par défaut */
-    padding: 0; /* enlève les espacements internes par défaut */
-    box-sizing: border-box; /* inclut bordures et padding dans la taille totale */
+  color: rgb(104, 48, 224); /* violet */
+
+  background: rgba(255, 255, 255, 0.6); /* fond blanc transparent */
+  backdrop-filter: blur(20px); /* effet flou derrière */
+
+  border-radius: 30px; /* coins arrondis */
+  padding: 30px; /* espace interne */
+
+  margin-bottom: 50px; /* espace en bas */
+
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15); /* ombre douce */
 }
 
-body {
-    /* style général de la page */
-    font-family: "Poppins", sans-serif; /* police moderne et lisible */
-    min-height: 100vh; /* hauteur minimum = écran entier */
-    background: linear-gradient(
-        135deg,
-        rgb(199, 255, 250) 0%,
-        rgb(166, 233, 252) 50%,
-        rgb(112, 252, 245) 100%
-    ); /* fond dégradé turquoise clair */
-    color: #1e293b; /* couleur du texte (gris foncé) */
-}
-
-/* MOBILE FIRST (base = mobile) */ /* on commence par le style téléphone */
-
-.dashboard {
-    /* conteneur principal */
-    display: flex; /* active flexbox */
-    flex-direction: column; /* éléments en colonne (mobile) */
-    gap: 40px; /* espace entre les éléments */
-    padding: 20px; /* espace intérieur */
-    align-items: flex-start; /* aligne à gauche */
+.cartes {
+  /* conteneur des cartes */
+  display: flex; /* flexbox */
+  flex-direction: column; /* empile les cartes */
+  gap: 30px; /* espace entre cartes */
 }
 
 .contenu {
-    /* zone de contenu */
-    flex: 1; /* prend tout l’espace disponible */
+  /* zone principale du contenu */
+  flex: 1; /* prend espace disponible */
+
+  background: rgba(255, 255, 255, 0.6); /* fond transparent */
+  backdrop-filter: blur(15px); /* flou */
+
+  border-radius: 30px; /* coins arrondis */
+
+  overflow: hidden; /* cache débordement */
+
+  box-shadow: 0 15px 35px rgba(32, 86, 204, 0.08); /* ombre */
+
+  transition: 0.4s ease; /* animation douce */
+}
+
+.contenu:hover {
+  /* quand on survole */
+  transform: translateY(-10px); /* monte légèrement */
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.consulter {
+ margin: 15px;
+  padding: 28px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  width: 23em;
+}
+
+.consulter:hover {
+  /* au survol */
+  transform: scale(1.03); /* agrandit légèrement */
+}
+
+.contacter {
+ margin: 15px;
+  padding: 28px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  width: 23em;
+}
+
+.contacter:hover {
+  /* au survol */
+  transform: scale(1.03); /* agrandit légèrement */
+}
+
+.bienvenu h2 {
+  text-align: center; /* centré */
+  padding: 25px; /* espace interne */
+  color: rgb(104, 48, 224); /* violet */
+  font-size: 30px; /* taille */
+}
+
+.bienvenu p {
+  text-align: center; /* centré */
+  color: rgb(39, 27, 204); /* bleu */
+  font-size: 18px; /* taille */
+}
+
+
+
+
+.aligner{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.consulter h3 {
+  text-align: left; /* a gauche */
+  padding: 25px; /* espace interne */
+  color: rgb(104, 48, 224); /* violet */
+  font-size: 25px; /* taille */
+}
+
+.consulter p {
+  text-align: left; /* a gauche */
+  padding-left: 22px;
+  color: rgb(39, 27, 204); /* bleu */
+  font-size: 16px; /* taille */
+}
+
+.contacter h3 {
+  text-align: left; /* a gauche */
+  padding: 25px; /* espace interne */
+  color: rgb(104, 48, 224); /* violet */
+  font-size: 25px; /* taille */
+}
+
+.contacter p {
+  text-align: left; /* a gauche */
+  padding-left: 22px;
+  color: rgb(39, 27, 204); /* bleu */
+  font-size: 16px; /* taille */
+}
+
+.etoile{
+  /* image profil */
+  width: 430px; /* largeur */
+  
+  cursor: pointer; /* main */
+  transition: 0.3s ease; /* animation */
+}
+
+aside img:hover {
+  /* survol bouton */
+  transform: translateY(-5px); /* monte */
 }

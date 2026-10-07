@@ -20,7 +20,7 @@ function redirectionLogin() {
         exit();
     }
 }
-
+   
 
 
 $_SESSION['navbar'] = isLogged() ? 'navbarProfile.php' : 'navbarLogin.php';
@@ -44,8 +44,10 @@ if ($action === 'home') {
 } else if ($action === "conversations"){
     conversationsAction();
 } else if ($action === "messagerie"){
-    messagerieAction();
+    Action();
+} else if ($action === "praticien"){
+    praticienAction();
 }
- 
+
  
 

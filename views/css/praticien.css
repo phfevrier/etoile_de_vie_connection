@@ -1,4 +1,40 @@
+/* RESET (base du site) */ /* on remet tout à zéro pour éviter les différences entre navigateurs */
 
+* {
+    /* sélectionne tous les éléments */
+    margin: 0; /* enlève les marges par défaut */
+    padding: 0; /* enlève les espacements internes par défaut */
+    box-sizing: border-box; /* inclut bordures et padding dans la taille totale */
+}
+
+body {
+    /* style général de la page */
+    font-family: "Poppins", sans-serif; /* police moderne et lisible */
+    min-height: 100vh; /* hauteur minimum = écran entier */
+    background: linear-gradient(
+        135deg,
+        rgb(199, 255, 250) 0%,
+        rgb(166, 233, 252) 50%,
+        rgb(112, 252, 245) 100%
+    ); /* fond dégradé turquoise clair */
+    color: #1e293b; /* couleur du texte (gris foncé) */
+}
+
+/* MOBILE FIRST (base = mobile) */ /* on commence par le style téléphone */
+
+.dashboard {
+    /* conteneur principal */
+    display: flex; /* active flexbox */
+    flex-direction: column; /* éléments en colonne (mobile) */
+    gap: 40px; /* espace entre les éléments */
+    padding: 20px; /* espace intérieur */
+    align-items: flex-start; /* aligne à gauche */
+}
+
+.contenu {
+    /* zone de contenu */
+    flex: 1; /* prend tout l’espace disponible */
+}
 
 h1 {
     /* titre principal */
@@ -88,7 +124,7 @@ h1 {
 
     margin: 8px 0; /* espace vertical */
 
-    color: #475569; /* gris */
+    color: rgb(133, 162, 236); /*bleu */
 }
 
 .nouveauMessage {
@@ -272,7 +308,7 @@ h1 {
 
 @media (min-width: 900px) {
     /* à partir de 900px */
-   .cartes {
+    .cartes {
         flex-direction: row; /* cartes en ligne */
     }
 }
@@ -282,5 +318,7 @@ h1 {
 
 @media (min-width: 1200px) {
     /* grand écran */
-    
+    .dashboard {
+        flex-direction: row; /* layout horizontal */
+    }
 }

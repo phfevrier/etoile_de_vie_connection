@@ -6,7 +6,7 @@ function homeAction() {
 
     
 
-    redirectionLogin();
+    //redirectionLogin();
     
     $greet_msg = "Bienvenue" . $_SESSION['nom'] . " !";
 

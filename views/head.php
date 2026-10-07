@@ -27,4 +27,6 @@
 <link rel="stylesheet" href="views/css/content.css" />
 <!-- Lien vers le style du footer -->
 
-</head>
+
+<!-- Lien dynamique en fonction de la page -->
+<link rel="stylesheet" href="views/css/accueil.css" />

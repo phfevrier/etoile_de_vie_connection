@@ -1,3 +1,36 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    
+    font-family: "Poppins", sans-serif; 
+    min-height: 100vh; 
+    background: linear-gradient(
+        135deg,
+        rgb(199, 255, 250) 0%,
+        rgb(166, 233, 252) 50%,
+        rgb(112, 252, 245) 100%
+    ); /* fond dégradé turquoise clair */
+    color: #1e293b; /* couleur du texte (gris foncé) */
+}
+
+
+.dashboard {
+    /* main conteneur principal */
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; 
+    padding: 20px; 
+    align-items: flex-start; 
+}
+
+.contenu {
+    /* zone de contenu */
+    flex: 1; /* prend tout l’espace disponible */
+}
 
 
 h1 {
@@ -13,6 +46,7 @@ h1 {
     box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
 
 }
+
 
 .bienvenu {
     text-align: center;
@@ -107,7 +141,7 @@ h1 {
 }
 
 .bouton {
-    /* bouton */
+    /* bouton tout les soins et rendez vous*/
     display: block; /* bloc */
     width: fit-content; /* largeur adaptée */
     margin: 25px auto; /* centré */
@@ -178,6 +212,7 @@ aside button {
 
     cursor: pointer; /* main */
     transition: 0.3s ease; /* animation */
+   
 }
 
 aside button:hover {
@@ -230,7 +265,9 @@ aside button:hover {
 
 @media (min-width: 1200px) {
     /* grand écran */
-    
+    .dashboard {
+        flex-direction: row; /* layout horizontal */
+    }
 }
 
 

@@ -72,7 +72,7 @@ function loginAction($isAdmin) {
         }
     }
 
-    $connection_title = $isAdmin ? "Connection praticien" : "Connection patient"; 
+    $connection_title = $isAdmin ? "Connection praticien" : "Connection"; 
     $content_view = PATH_ROOT.'/views/loginView.php';
     require_once PATH_ROOT.'/views/layout.php';
 

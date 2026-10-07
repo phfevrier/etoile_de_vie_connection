@@ -4,7 +4,7 @@
             <nav class="menu">
                 <!-- Menu de navigation -->
 
-                <a href="#">Accueil</a>
+                <a href="?action=home">Accueil</a>
                 <!-- Lien vers la section Accueil -->
 
                 <a href="#">Rendez-vous</a>
@@ -20,14 +20,14 @@
                 <!-- Lien vers le catalogue -->
             </nav>
 
-            <a class="connexion" href="/?action=login">
+  
                 <?php
                 if (isLogged()) {
-                    echo 'deconnection';
+                    echo '<a class="connexion" href="?action=logout">Déconnectez-vous</a>';
                 } else {
-                    echo 'connection';
+                    echo '<a class="connexion" href="?action=login">Connectez-vous</a>';
                 };
                 ?>
-            </a>
+
             <!-- Bouton pour se déconnecter -->
         </header>
