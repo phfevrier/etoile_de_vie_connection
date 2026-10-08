@@ -1,0 +1,39 @@
+.entete {
+  padding: 1em;
+  background: #d7fbfc;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+.menu a {
+  font-size: 0.8em;
+}
+
+.connexion {
+  display: inline-block;
+  width: fit-content;
+  border: 0;
+  border-radius: 2em;
+  padding: 0.8em 1.4em;
+  color: #ffffff;
+  background: linear-gradient(110deg, #7426ec, #029bd8);
+  font-size: 0.8em;
+  text-align: center;
+}
+.connexion {
+  background: linear-gradient(110deg, #2167e9, #00b8c4);
+}
+
+@media (min-width: 640px) {
+  .entete {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

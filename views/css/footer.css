@@ -1,0 +1,13 @@
+.pied {
+  padding: 1em;
+  background: linear-gradient(110deg, #7025e8, #008ddd, #00dac6);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  font-size: 0.75em;
+}
+.pied p {
+  margin: 0;
+}
