@@ -1,19 +1,6 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>inscriptionPraticien</title>
-    <link rel="stylesheet" href="../css/inscriptionPraticien.css" />
-  </head>
-  <body>
-    <header class="entete">
-      <nav class="menu">
-        <a>Accueil</a><a>Rendez-vous</a><a>Patients</a><a>Catalogue des soins</a
-        ><a>Suivi</a><a>Messages</a>
-      </nav>
-      <a class="connexion">Connexion</a>
-    </header>
+<link rel="stylesheet" href="views/css/inscriptionPraticien.css" />
+<link rel="stylesheet" href="views/css/style.css" />
+
     <main class="page page-connexion">
       <section class="carte-connexion">
         <h1>Inscription praticien</h1>
@@ -35,11 +22,4 @@
         <a class="lien-compte">J’ai déjà un compte : me connecter</a>
       </section>
     </main>
-    <footer class="pied">
-      <p>À propos</p>
-      <p>RGPD</p>
-      <p>© 2026</p>
-    </footer>
-    <script src="../js/inscriptionPraticien.js" defer></script>
-  </body>
-</html>
+

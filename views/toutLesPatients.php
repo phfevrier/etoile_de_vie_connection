@@ -1,19 +1,6 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>toutLesPatients</title>
-    <link rel="stylesheet" href="../css/toutLesPatients.css" />
-  </head>
-  <body>
-    <header class="entete">
-      <nav class="menu">
-        <a>Accueil</a><a>Rendez-vous</a><a>Patients</a><a>Catalogue des soins</a
-        ><a>Suivi</a><a>Messages</a>
-      </nav>
-      <a class="connexion">Connexion</a>
-    </header>
+<link rel="stylesheet" href="views/css/toutLesPatients.css" />
+<link rel="stylesheet" href="views/css/style.css" />
+
     <main class="page">
       <div class="conteneur">
         <section class="contenu">
@@ -78,11 +65,4 @@
         </aside>
       </div>
     </main>
-    <footer class="pied">
-      <p>À propos</p>
-      <p>RGPD</p>
-      <p>© 2026</p>
-    </footer>
-    <script src="../js/toutLesPatients.js" defer></script>
-  </body>
-</html>
+

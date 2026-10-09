@@ -23,14 +23,13 @@
                 <!-- Lien vers le catalogue -->
             </nav>
 
-            <a class="connexion" href="/?action=login">
                 <?php
                 if (isLogged()) {
-                    echo 'deconnection';
+                    echo '<a class="deconnexion" href="?action=logout">déconnexion</a>';
                 } else {
-                    echo 'connection';
-                };
+                    echo '<a class="connexion" href="?action=login">connexion</a>';
+                }
                 ?>
-            </a>
+            
             <!-- Bouton pour se déconnecter -->
         </header>

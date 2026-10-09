@@ -20,6 +20,8 @@
 
 <link rel="stylesheet" href="views/css/navbar.css" />
 <!-- Lien vers le style du header -->
+ 
+<link rel="stylesheet" href="views/css/accueil.css" />
 
 <link rel="stylesheet" href="views/css/footer.css" />
 <!-- Lien vers le style du footer -->

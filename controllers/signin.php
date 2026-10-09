@@ -9,9 +9,9 @@ function signinAction() {
     $prenom = "";
     $email = "";
     $hash = "";
+    $date_naissance = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
         // Vérification de la soumission du formulaire
         if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['mot_de_passe']) && isset($_POST['prenom']) && isset($_POST['date_naissance'])) {
 
@@ -33,7 +33,6 @@ function signinAction() {
 
                 // Hachage sécurisé du mot de passe
                 $hash = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
-
                 $result = set_user($nom, $prenom, $email, $hash, $date_naissance);
 
                 if ($result) {
@@ -45,7 +44,7 @@ function signinAction() {
         }
     }
 
-    $content_view = PATH_ROOT.'/views/signinView.php';
+    $content_view = PATH_ROOT.'/views/signin.php';
     require_once PATH_ROOT.'/views/layout.php';
 
 }

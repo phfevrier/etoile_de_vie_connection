@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>catalogueDeSoins</title>
-    <link rel="stylesheet" href="../css/catalogueDeSoins.css" />
-  </head>
-  <body>
-    <header class="entete">
-      <nav class="menu">
-        <a>Accueil</a><a>Rendez-vous</a><a>Patients</a><a>Catalogue des soins</a
-        ><a>Suivi</a><a>Messages</a>
-      </nav>
+<link rel="stylesheet" href="views/css/catalogueDeSoins.css" />
+<link rel="stylesheet" href="views/css/style.css" />
+
       <a class="connexion">Connexion</a>
     </header>
     <main class="page">
@@ -53,11 +42,4 @@
         </aside>
       </div>
     </main>
-    <footer class="pied">
-      <p>À propos</p>
-      <p>RGPD</p>
-      <p>© 2026</p>
-    </footer>
-    <script src="../js/catalogueDeSoins.js" defer></script>
-  </body>
-</html>
+    
