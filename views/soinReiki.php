@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="views/css/soinReiki.css" />
-<link rel="stylesheet" href="views/css/style.css" />
+<link rel="stylesheet" href="views/css/s.css" />
 
     <main class="page">
       <div class="conteneur">
@@ -16,17 +16,17 @@
               Retrouvez ici la présentation du soin, le déroulement de la séance
               et les informations données par votre praticien.
             </p>
-            <p class="note">
+            <!-- <p class="note">
               Le texte détaillé et la photo du soin sont à compléter.
               L’illustration utilisée est celle du projet.
-            </p>
+            </p> -->
           </article>
           <div class="actions"><a class="bouton">Retour au catalogue</a></div>
         </section>
         <aside class="profil">
           <img
             class="photo-profil"
-            src="../images/profil.jpg"
+             src="views/images/profil.jpg"
             alt="Photo de profil"
           />
           <p class="nom">Philippe Février</p>

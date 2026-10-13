@@ -1,4 +1,6 @@
 // Selection du jour dans le formulaire de rendez-vous.
+
+
 document.querySelectorAll('[data-jour]').forEach(bouton => {
  bouton.addEventListener('click', () => {
   document.querySelectorAll('[data-jour]').forEach(jour => { jour.classList.remove('actif'); jour.setAttribute('aria-pressed', 'false'); });

@@ -5,6 +5,7 @@
       <div class="accueil">
         <div>
           <h1>Etoile de vie soins énergétique</h1>
+
           <section class="presentation">
             <section class="presentation">
               <article class="bienvenue">
@@ -44,12 +45,19 @@
               </section>
             </section>
           </section>
+
+          </section>
+            <div class="actions">
+            <a  href="index.php?action=praticien"class="bouton">Mon espace</a>
+            </div>
+         </section>
         </div>
+        
 
         <article>
           <img
             class="image-accueil"
-            src="views/images/étoile.png"
+             src="views/images/étoile.png"
             alt="Photo de l'étoile"
           />
         </article>

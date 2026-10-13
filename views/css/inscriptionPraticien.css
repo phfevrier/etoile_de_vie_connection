@@ -29,37 +29,8 @@ button,
 .bouton {
   cursor: pointer;
 }
-.entete {
-  padding: 1em;
-  background: #d7fbfc;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  align-items: center;
-}
-.menu a {
-  font-size: 0.8em;
-}
-.connexion,
-.bouton {
-  display: inline-block;
-  width: fit-content;
-  border: 0;
-  border-radius: 2em;
-  padding: 0.8em 1.4em;
-  color: #ffffff;
-  background: linear-gradient(110deg, #7426ec, #029bd8);
-  font-size: 0.8em;
-  text-align: center;
-}
-.connexion {
-  background: linear-gradient(110deg, #2167e9, #00b8c4);
-}
+
+
 .page {
   flex: 1;
   padding: 1.2em;
@@ -136,24 +107,12 @@ button,
   gap: 1em;
   margin: 1.5em 0;
 }
-.note {
+/* .note {
   font-size: 0.8em;
   color: #426777;
   line-height: 1.6;
-}
-.pied {
-  padding: 1em;
-  background: linear-gradient(110deg, #7025e8, #008ddd, #00dac6);
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-  font-size: 0.75em;
-}
-.pied p {
-  margin: 0;
-}
+} */
+
 .formulaire {
   display: flex;
   flex-direction: column;

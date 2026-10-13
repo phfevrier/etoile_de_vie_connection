@@ -3,25 +3,21 @@
 require_once PATH_ROOT.'/models/users.php';
 
 
-function open_session($user, $isAdmin)  {
+function open_session($user)  {
     // Démarrage de la session
 
     // Stockage des informations utiles en session
-    if ($isAdmin) {
-        $_SESSION['user_id'] = $user['id_praticien'];
-    } else {
-        $_SESSION['user_id'] = $user['id_patient'];
-    }
+    $_SESSION['user_id'] = $user['id_praticien'];
+
     $_SESSION['nom'] = $user['nom'];
     $_SESSION['prenom'] = $user['prenom'];
-    $_SESSION['isAdmin'] = $isAdmin;
     // Redirection vers la page d'accueil
     header('Location:' . URL);
     exit();
 
 }
 
-function loginAction($isAdmin) {
+function loginAction() {
 
 
     $email = "";
@@ -41,7 +37,7 @@ function loginAction($isAdmin) {
         // Vérification de la soumission du formulaire
         if (isset($_POST['email']) && isset($_POST['mot_de_passe'])) {
 
-
+// achage du mot de passe
             $email = trim(htmlspecialchars($_POST['email']));
             $mot_de_passe = trim(htmlspecialchars($_POST['mot_de_passe']));
 
@@ -49,15 +45,8 @@ function loginAction($isAdmin) {
 
                 $error_msg = "Tous les champs sont obligatoires";
             } else {
+                $user = get_admin_by_email($email);
 
-                if ($isAdmin) {
-                    $user = get_admin_by_email($email);
-
-                } else {
-
-                    $user = get_user_by_email($email);
-
-                }
 
                 if (!$user) {
                     $error_msg =  "Compte inconnu.";
@@ -65,14 +54,12 @@ function loginAction($isAdmin) {
 
                     $error_msg =  "Mot de passe incorrect.";
                 } else {
-                    echo $user;
-                    open_session($user, $isAdmin);
+                    open_session($user);
                 }
             }
         }
     }
 
-    $connection_title = $isAdmin ? "Connection praticien" : "Connection patient"; 
     $content_view = PATH_ROOT.'/views/login.php';
     require_once PATH_ROOT.'/views/layout.php';
 

@@ -4,7 +4,7 @@
     <main class="page">
       <div class="conteneur">
         <section class="contenu">
-          <h1 class="titre">Mon espace patient</h1>
+          <h1 class="titre">Mon espace personnel</h1>
           <div class="bloc">
             <h2>Rendez-vous</h2>
             <div class="cartes">
@@ -40,15 +40,15 @@
             </div>
           </div>
           <div class="actions"><a class="bouton">Suivi des soins</a></div>
-          <p class="note">
+          <!-- <p class="note">
             Exemples de la maquette : ces informations ne sont pas encore
             reliées à la base de données.
-          </p>
+          </p> -->
         </section>
         <aside class="profil">
           <img
             class="photo-profil"
-            src="../images/profil.jpg"
+              src="views/images/profil.jpg"
             alt="Photo de profil"
           />
           <p class="nom">Philippe Février</p>

@@ -2,22 +2,29 @@
 <link rel="stylesheet" href="views/css/style.css" />
 
     <main class="page">
+
       <div class="conteneur">
+
         <section class="contenu">
+
           <h1 class="titre">Mon espace praticien</h1>
+
           <div class="bloc">
             <h2>Rendez-vous</h2>
+
             <div class="cartes">
               <article class="carte">
                 <h3>Rendez-vous</h3>
                 <p>👤 Nathalie Dulon</p>
                 <p>📅 01/11/2026 à 10h00</p>
               </article>
+
               <article class="carte">
                 <h3>Rendez-vous</h3>
                 <p>👤 Pierre Blanc</p>
                 <p>📅 02/11/2026 à 10h00</p>
               </article>
+              
               <article class="carte">
                 <h3>Rendez-vous</h3>
                 <p>👤 Sophie Roland</p>
@@ -25,7 +32,9 @@
               </article>
             </div>
           </div>
-          <div class="actions"><a class="bouton">Tous les rendez-vous</a></div>
+
+          <div class="actions"><a href="index.php?action=rdv" class="bouton">Tous les rendez-vous</a></div>
+          <!-- <div class="actions"><a href="index.php?action=users" class="bouton">Patient</a></div> -->
           <div class="bloc">
             <h2>Soins en cours</h2>
             <div class="cartes">
@@ -39,21 +48,18 @@
               </article>
             </div>
           </div>
-          <div class="actions"><a class="bouton">Suivi des soins</a></div>
-          <p class="note">
-            Exemples de la maquette : ces informations ne sont pas encore
-            reliées à la base de données.
-          </p>
-          <div class="actions"><a class="bouton">Tous les patients</a></div>
+          <div class="actions"><a href="index.php?action=patientSuivi" class="bouton">Suivi des soins</a></div>
+      
+          <div class="actions"><a href="index.php?action=toutLesPatients" class="bouton">Tous les patients</a></div>
         </section>
         <aside class="profil">
           <img
             class="photo-profil"
-            src="../images/profil.jpg"
-            alt="Photo de profil"
+               src="views/images/profil.jpg"
+            alt="Photo de profil"/>
           />
           <p class="nom">Philippe Février</p>
-          <a class="bouton">Mon espace</a>
+          <a href="index.php?action=praticien" class="bouton">Mon espace</a>
         </aside>
       </div>
     </main>
